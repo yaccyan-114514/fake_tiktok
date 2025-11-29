@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索已有标签或输入新标签"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/editTextSearchTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="搜索或输入标签..."
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTagResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="300dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
+
