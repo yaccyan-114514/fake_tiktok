@@ -1,6 +1,6 @@
 # Fake TikTok - 短视频内容创作应用
 
-一个功能完整的Android短视频内容创作应用，支持图片上传、AI智能文本生成、标签管理、位置定位等功能。
+一个模拟抖音投稿界面的应用，支持图片上传、AI智能文本生成、标签管理、位置定位等功能。
 
 ## 📱 项目简介
 
@@ -76,7 +76,6 @@ Fake TikTok 是一个仿 TikTok 风格的内容创作应用，用户可以创建
 
 - **第三方SDK**
   - 高德地图定位SDK (v6.5.1)
-  - Google Play Services Location
 
 - **AI服务**
   - Qwen API (qwen3-vl-flash模型)
@@ -236,12 +235,7 @@ app/src/main/
 ## 🗄️ 数据库说明
 
 ### 数据库文件位置
-- 草稿数据库: `/data/data/com.example.fake_tiktok/databases/drafts.db`
-- 应用数据库: `/data/data/com.example.fake_tiktok/databases/app.db`
-
-### 数据库版本
-- 草稿数据库版本: 1
-- 应用数据库版本: 2
+- `/data/data/com.example.fake_tiktok/databases/temp_storage.db`
 
 ### 表结构
 - `tag` 表：标签库，存储所有可用标签
@@ -274,18 +268,6 @@ app/src/main/
 1. 图片权限在某些Android版本可能需要手动授权
 2. 定位功能需要设备开启GPS或网络定位
 3. AI生成功能需要网络连接
-
-## 📄 许可证
-
-本项目仅供学习和研究使用。
-
-## 👥 贡献
-
-欢迎提交Issue和Pull Request。
-
-## 📞 联系方式
-
-如有问题或建议，请通过Issue反馈。
 
 ---
 
